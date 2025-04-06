@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Phone</title>
+</head>
+<body>
+  <div id="field">
+    <div id="phone">
+      <!--HOME-SCREEN-->
+      <div id="screen">
+        <!--island-->
+        <div id="top">
+          <div id="island">
+            <div id="real-camera"></div>
+          </div>      
+        </div>
+        <!--apps-->
+        <div id="apps">
+          <a class="apps" style="height: 170px; width: 170px; display: flex; justify-content: center; flex-wrap: wrap; background-color: rgba(95, 95, 95, 0.664); backdrop-filter: blur(20px);"><span id="time"><span id="h"></span>:<span id="min"></span></span><br><span id="sec"></span></a>
+          <div style="display: flex; justify-content: space-evenly; width: 170px; height: 170px; gap: 10px; flex-wrap: wrap;">
+            <a class="apps"><img src="/images/appstore.jpg" alt="calculator" class="apps"></a>
+            <a class="apps"><img src="/images/chatgpt.webp" alt="calculator" class="apps"></a>
+            <a class="apps" style="background-color: rgb(30, 30, 31);"><img src="/images/clock.webp" alt="calculator" class="apps" style="background-color: rgb(30, 30, 31);"></a>
+            <a class="apps"><img src="/images/photos.webp" alt="calculator" class="apps"></a>
+          </div>
+          <a class="apps" id="calendar"><span id="day"></span><span id="month"></span></a>
+          <a class="apps" style="background-color: rgb(97, 255, 97);"><img src="images/message.webp" alt="calculator" class="apps" style="background-color: rgb(97, 255, 97);"></a>
+          <a class="apps" style="background-color: rgb(251, 81, 106);"><img src="/images/music.png" alt="calculator" class="apps" style="background-color: rgb(251, 81, 106);"></a>
+          <a class="apps"><img src="/images/settings.jpg" alt="settings" class="apps" id="settings-icon"></a>
+          <a class="apps"><img src="/images/contacts.jpg" alt="calculator" class="apps"></a>
+          <a class="apps"><img src="/images/mail.jpg" alt="mail" class="apps"></a>
+          <a class="apps"><img src="/images/wheather.jpg" alt="wheather" class="apps"></a>
+          <a class="apps"><img src="/images/wallet.jpg" alt="wallet" class="apps"></a>
+          <a class="apps"><img src="/images/notes.jpg" alt="notes" class="apps" id="notes-icon"></a>
+          <a class="apps"><img src="/images/youtube.jpg" alt="youtube" class="apps"></a>
+        </div>
+        <!--apps-bellow-->
+        <div id="apps-bellow">
+          <a class="apps-b"><img src="/images/safari.png" alt="calculator" class="apps-b"></a>
+          <a class="apps-b" style="background-color: rgb(185, 185, 185);"><img src="/images/camera.png" alt="calculator" class="apps-b" style="background-color: rgb(206, 206, 206);"></a>
+          <a class="apps-b"><img src="/images/files.jpg" alt="calculator" class="apps-b"></a>
+          <a class="apps-b"><img src="/images/photos.webp" alt="calculator" class="apps-b"></a>
+        </div>
+      </div>
+      <!--SETTINGS-SCREEN-->
+      <div id="settings-screen" style="display: none;">
+        <!--island-->
+        <div class="top">
+          <div class="island" id="settings-island">
+            <div id="real-camera"></div>
+            <img src="images/settings.jpg" alt="settings" width="20px" height="20px" style="border-radius: 20px; margin-left: 40px;" class="settings-island-icon">
+          </div>      
+        </div>
+        <h1 style="margin-left: 20px; margin-top: 80px;">Settings</h1>
+        <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px;">
+          <input type="search" id="settings-search" list="settings-list" placeholder=" Search...">
+          <datalist id="settings-list">
+            <option value="Dark mode"></option>
+            <option value="Battery"></option>
+            <option value="Plane mode"></option>
+          </datalist>
+          <div class="setting">
+            <p class="setting-name">Dark mode</p>
+            <!-- Rounded switch -->
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <div class="setting">
+            <p class="setting-name">Battery saver</p>
+            <!-- Rounded switch -->
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <div class="setting">
+            <p class="setting-name">Battery</p>
+            <p class="setting-name">100%</p>
+            <img src="images/battery.png" alt="battery" width="150px">
+          </div>
+          <div class="setting">
+            <img src="images/plane.png" alt="plane mode" width="40px" style="margin-left: 20px;">
+            <p class="setting-name">Plane mode</p>
+            <!-- Rounded switch -->
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <div style="width: 50%; background-color: grey; height: 10px; border-radius: 10px; margin-top: 250px; cursor: pointer;" id="leave-settings"></div>
+        </div>
+      </div>
+      <!--NOTES-SCREEN-->
+      <div id="notes-screen" style="display: none;">
+        <!--island-->
+        <div class="top">
+          <div class="island" id="notes-island">
+            <div id="real-camera"></div>
+          </div>      
+        </div>
+        <h1 style="margin-left: 20px; margin-top: 80px; font-weight: 900; font-size: 50px;">Notes</h1>
+        <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px;">
+          <input type="search" id="settings-search" list="notes-list" placeholder=" Search...">
+          <datalist id="notes-list">
+            <option value="New notes"></option>
+          </datalist>
+          <div class="setting" style="border-radius: 50px;">
+            <textarea name="notes" id="notes-area" style="resize: none; height: 400px; width: 100%; border-radius: 10px; font-size: 30px;">       New notes</textarea>
+          </div>
+          <div style="width: 50%; background-color: grey; height: 10px; border-radius: 10px; margin-top: 100px; cursor: pointer;" id="leave-notes"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
