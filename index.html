@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <title>Phone</title>
+</head>
+<body>
+  <div id="field">
+    <div class="slide" id="to-home-screen"></div>
+    <div id="phone">
+      <!--HOME-SCREEN-->
+      <div id="screen">
+        <!--island-->
+        <div id="top">
+          <div id="island" class="island">
+            <div id="real-camera"></div>
+            <p id="island-info" class="island-info"></p>
+          </div>      
+        </div>
+        <!--apps-->
+        <div id="apps">
+          <a class="apps" style="height: 170px; width: 170px; display: flex; justify-content: center; flex-wrap: wrap; background-color: rgba(95, 95, 95, 0.664); backdrop-filter: blur(20px);" id="clock-icon"><span id="time"><span id="h"></span>:<span id="min"></span></span><br><span id="sec"></span></a>
+          <div style="display: flex; justify-content: space-evenly; width: 170px; height: 170px; gap: 10px; flex-wrap: wrap;">
+            <a class="apps"><img src="/images/appstore.jpg" alt="appstore" id="app-store-icon" class="apps"></a>
+            <a class="apps"><img src="/images/chatgpt.webp" alt="chatgpt" id="chatgpt-icon" class="apps"></a>
+            <a class="apps" style="background-color: rgb(30, 30, 31);"><img src="/images/clock.webp" alt="calculator" class="apps" id="clock-widget" style="background-color: rgb(30, 30, 31);"></a>
+            <a class="apps"><img src="/images/photos.webp" alt="photos" class="apps"></a>
+          </div>
+          <a class="apps" id="calendar"><span id="day"></span><span id="month"></span></a>
+          <a class="apps" style="background-color: rgb(97, 255, 97);"><img src="images/message.webp" alt="calculator" class="apps" style="background-color: rgb(97, 255, 97);"></a>
+          <a class="apps" style="background-color: rgb(251, 81, 106);"><img src="/images/music.png" alt="calculator" id="music-icon" class="apps" style="background-color: rgb(251, 81, 106);"></a>
+          <a class="apps"><img src="/images/settings.jpg" alt="settings" class="apps" id="settings-icon"></a>
+          <a class="apps"><img src="/images/contacts.jpg" alt="calculator" class="apps"></a>
+          <a class="apps"><img src="/images/mail.jpg" alt="mail" class="apps"></a>
+          <a class="apps"><img src="/images/wheather.jpg" alt="wheather" class="apps"></a>
+          <a class="apps"><img src="/images/wallet.jpg" alt="wallet" id="wallet-icon" class="apps"></a>
+          <a class="apps"><img src="/images/notes.jpg" alt="notes" class="apps" id="notes-icon"></a>
+          <a class="apps"><img src="/images/youtube.jpg" alt="youtube" id="youtube-icon" class="apps"></a>
+        </div>
+        <!--apps-bellow-->
+        <div id="apps-bellow">
+          <a class="apps-b"><img src="/images/safari.png" alt="calculator" class="apps-b"></a>
+          <a class="apps-b" style="background-color: rgb(185, 185, 185);"><img src="/images/camera.png" alt="calculator" class="apps-b" style="background-color: rgb(206, 206, 206);"></a>
+          <a class="apps-b"><img src="/images/files.jpg" alt="calculator" class="apps-b"></a>
+          <a class="apps-b"><img src="/images/photos.webp" alt="calculator" class="apps-b"></a>
+        </div>
+      </div>
+      <!--2ND"-SCREEN-->
+      <div id="second-screen" style="display: none;">
+        <!--island-->
+        <div class="top">
+          <div class="island" id="youtube-island" style="box-shadow: 0 15px 15px rgba(0, 0, 0, 0.356), 0 0 10px rgba(0, 0, 0, 0.356);">
+            <div id="real-camera"></div>
+            <p class="island-info" id="island-info-wallet"></p>
+          </div>      
+        </div>
+        <!--apps-->
+        <div id="apps-1">
+          <a class="apps" id="calendar"><span id="day"></span><span id="month"></span></a>
+          <a class="apps" style="background-color: rgb(97, 255, 97);"><img src="images/message.webp" alt="calculator" class="apps" style="background-color: rgb(97, 255, 97);"></a>
+          <a class="apps" style="background-color: rgb(81, 251, 118);"><img src="/images/music.png" alt="calculator"  class="apps" style="background-color: rgb(251, 81, 106);"></a>
+          <a class="apps"><img src="/images/settings.jpg" alt="settings" class="apps" id="settings-icon"></a>
+        </div>
+        <!--apps-bellow-->
+        <div id="apps-bellow">
+          <a class="apps-b"><img src="/images/safari.png" alt="calculator" class="apps-b"></a>
+          <a class="apps-b" style="background-color: rgb(185, 185, 185);"><img src="/images/camera.png" alt="calculator" class="apps-b" style="background-color: rgb(206, 206, 206);"></a>
+          <a class="apps-b"><img src="/images/files.jpg" alt="calculator" class="apps-b"></a>
+          <a class="apps-b"><img src="/images/photos.webp" alt="calculator" class="apps-b"></a>
+        </div>
+      </div>
+      <!--SETTINGS-SCREEN-->
+      <div id="settings-screen" style="display: none;">
+        <!--island-->
+        <div class="top">
+          <div class="island" id="settings-island">
+            <div id="real-camera"></div>
+            <p class="island-info"></p>
+          </div>      
+        </div>
+        <h1 style="margin-left: 20px; margin-top: 80px;">Settings</h1>
+        <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px;">
+          <input type="search" id="settings-search" list="settings-list" placeholder=" Search...">
+          <datalist id="settings-list">
+            <option value="Dark mode"></option>
+            <option value="Battery"></option>
+            <option value="Plane mode"></option>
+          </datalist>
+          <div class="setting">
+            <img src="images/settings.jpg" alt="account-image" width="100px" style="border-radius: 100px; margin: 10px;">
+            <p class="setting-name" style="margin-right: 50px; font-weight: 600; font-size: 30px;">Your account</p>
+          </div>
+          <div class="setting">
+            <p class="setting-name">Dark mode</p>
+            <!-- Rounded switch -->
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <div class="setting">
+            <p class="setting-name">Battery saver</p>
+            <!-- Rounded switch -->
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <div class="setting" id="battery-power">
+            <p class="setting-name">Battery</p>
+            <p class="setting-name">100%</p>
+            <img src="images/battery.png" alt="battery" width="150px">
+          </div>
+          <div class="setting">
+            <img src="images/plane.png" alt="plane mode" width="40px" style="margin-left: 20px;">
+            <p class="setting-name">Plane mode</p>
+            <!-- Rounded switch -->
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <div style="margin-top: 114px;" id="leave-settings" class="close"></div>
+        </div>
+      </div>
+
+      <!--NOTES-SCREEN-->
+      <div id="notes-screen" style="display: none;">
+        <!--island-->
+        <div class="top">
+          <div class="island" id="notes-island" style="box-shadow: 0 15px 15px rgba(255, 196, 0, 0.356), 0 0 10px rgb(255, 196, 0);;">
+            <div id="real-camera"></div>
+            <p class="island-info" style="color: rgb(255, 201, 51);"></p>
+          </div>      
+        </div>
+        <h1 style="margin-left: 20px; margin-top: 80px; font-weight: 900; font-size: 50px; color: rgb(0, 0, 0);">Notes</h1>
+        <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px;">
+          <input type="search" id="settings-search" list="notes-list" placeholder=" Search...">
+          <datalist id="notes-list">
+            <option value="New notes"></option>
+          </datalist>
+          <div class="setting" style="border-radius: 50px;">
+            <textarea name="notes" id="notes-area" style="resize: none; height: 400px; width: 100%; border-radius: 10px; font-size: 30px;">       New notes</textarea>
+          </div>
+          <div style="margin-top: 98px; " id="leave-notes" class="close"></div>
+        </div>
+      </div>
+
+      <!--CALENDAR-SCREEN-->
+      <div id="calendar-screen" style="display: none;">
+        <!--island-->
+        <div class="top">
+          <div class="island" id="calendar-island" style="box-shadow: 0 15px 15px rgba(255, 52, 52, 0.356), 0 0 10px rgb(255, 52, 52, 0.356);">
+            <div id="real-camera"></div>
+            <p class="island-info"></p>
+          </div>      
+        </div>
+        <h1 style="margin-left: 20px; margin-top: 80px; font-weight: 900; font-size: 50px; color: rgb(255, 56, 56);">Calendar</h1>
+        <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px;">
+          <div class="setting" style="justify-content: center; padding: 0;  height: 60px; border-radius: 10px; background-color: #bff5ff; border: solid 2px #63b8c771;">
+            <p style="color: #007286; font-weight: 900; font-size: 50px; padding: 0;" id="calendar-year">YEAR</p>
+          </div>
+          <div class="setting" style="justify-content: center; height: 50px; border-radius: 10px; background-color: #bff5ff; border: solid 2px #63b8c771;">
+            <p style="color: #007286; font-weight: 900; font-size: 40px;" id="calendar-month">MONTH</p>
+          </div>
+          <div class="setting" style="justify-content: center; height: 50px; border-radius: 10px; background-color: #bff5ff; border: solid 2px #63b8c771;">
+            <p style="color: #007286; font-weight: 900; font-size: 40px;" id="calendar-time">TIME</p>
+          </div>
+          <div style="margin-top: 378px; " id="leave-calendar" class="close"></div>
+        </div>
+      </div>
+
+      <!--CLOCK-SCREEN-->
+      <div id="clock-screen" style="display: none;">
+        <!--island-->
+        <div class="top">
+          <div class="island" id="clock-island" style="box-shadow: 0 15px 15px rgba(0, 0, 0, 0.356), 0 0 10px rgba(0, 0, 0, 0.356);">
+            <div id="real-camera"></div>
+            <p class="island-info"></p>
+          </div>      
+        </div>
+        <h1 style="margin-left: 20px; margin-top: 80px; font-weight: 900; font-size: 50px; color: rgb(185, 185, 185);">Clock</h1>
+        <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px;">
+          <p style="cursor: pointer;" id="clock-time"><span><span id="clock-h"></span>:<span id="clock-min"></span>:<span id="clock-sec"></span></span></p>
+          <div style="margin-top: 353px; " id="leave-clock" class="close"></div>
+        </div>
+      </div>
+
+      <!--APP-STORE-SCREEN-->
+      <div id="app-store-screen" style="display: none;">
+        <!--island-->
+        <div class="top">
+          <div class="island" id="app-store-island" style="box-shadow: 0 15px 15px rgba(0, 0, 0, 0.356), 0 0 10px rgba(0, 0, 0, 0.356);">
+            <div id="real-camera"></div>
+            <p class="island-info"></p>
+          </div>      
+        </div>
+        <img src="images/appstore.jpg" alt="app-store-icon" width="100px" style="border-radius: 20px; margin-top: 50px; margin-left: 20px;">
+        <h1 style="margin-left: 20px; margin-top: 10px; font-weight: 900; font-size: 50px; color: rgb(0, 0, 0);">App store</h1>
+        <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px;">
+          <div class="app-store-app-container">
+            <img src="images/wallet.jpg" alt="chatgpt" width="70px" class="app-store-img">
+            <p class="app-store-app-name">Wallet</p>
+            <p class="install-button" id="open-wallet">open</p>
+          </div>
+          <div class="app-store-app-container">
+            <img src="images/chatgpt.webp" alt="chatgpt" width="70px" class="app-store-img">
+            <p class="app-store-app-name">chatgpt</p>
+            <p class="install-button" id="open-chatgpt">open</p>
+          </div>
+          <div class="app-store-app-container">
+            <img src="images/notes.jpg" alt="chatgpt" width="70px" class="app-store-img">
+            <p class="app-store-app-name">Notes</p>
+            <p class="install-button" id="open-notes">open</p>
+          </div>
+          <div class="app-store-app-container">
+            <img src="images/music.png" alt="chatgpt" width="70px" class="app-store-img">
+            <p class="app-store-app-name">Music</p>
+            <p class="install-button" id="open-music">get</p>
+          </div>
+          <div style="margin-top: 95px; background-color: rgb(136, 136, 136);" id="leave-app-store" class="close"></div>
+        </div>
+      </div>
+
+      <!--MUSIC-SCREEN-->
+      <div id="music-screen" style="display: none;">
+        <!--island-->
+        <div class="top">
+          <div class="island" id="music-island" style="box-shadow: 0 15px 15px rgba(0, 0, 0, 0.356), 0 0 10px rgba(0, 0, 0, 0.356);">
+            <div id="real-camera"></div>
+            <p class="island-info"></p>
+          </div>      
+        </div>
+        <h1 style="margin-top: 40px; font-weight: 900; font-size: 50px; color: rgb(0, 0, 0); text-align: center;">Music</h1>
+        <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px;">
+          <img src="images/music.png" alt="music" width="300px">
+          <img src="images/music-control.png" alt="control" width="340px" style="cursor: pointer; margin-top: 30px;" id="music-control">
+          <div style="margin-top: 205px; background-color: rgb(226, 226, 226);" id="leave-music" class="close"></div>
+        </div>
+      </div>
+
+      <!--WALLET-SCREEN-->
+      <div id="wallet-screen" style="display: none;">
+        <!--island-->
+        <div class="top">
+          <div class="island" id="wallet-island" style="box-shadow: 0 15px 15px rgba(0, 0, 0, 0.356), 0 0 10px rgba(0, 0, 0, 0.356);">
+            <div id="real-camera"></div>
+            <p class="island-info" id="island-info-wallet"></p>
+          </div>      
+        </div>
+        <h1 style="margin-left: 20px; margin-top: 80px; font-weight: 900; font-size: 50px; color: rgb(255, 255, 255);">Wallet</h1>
+        <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px;">
+          <div class="card" id="card">
+            <p style="width: 100%; font-size: 35px; font-weight: 900; margin-top: 0; margin-left: 10px; color: rgb(179, 179, 179); margin-bottom: 0;">TKCard</p>
+            <p style="font-size: 20px; font-weight: 600; color: rgb(95, 95, 95); margin-top: 0; margin-left: 10px;">12/12/2025</p>
+            <p style="color: white; font-weight: 600; font-size: 20px; letter-spacing: 3px; text-align: right; margin-right: 40px; margin-top: 100px;">0000 **** ****</p>
+          </div>
+          <div style="margin-top: 348px; background-color: rgb(226, 226, 226);" id="leave-wallet" class="close"></div>
+        </div>
+      </div>
+
+      <!--YOUTUBE-SCREEN-->
+      <div id="youtube-screen" style="display: none;">
+        <!--island-->
+        <div class="top">
+          <div class="island" id="youtube-island" style="box-shadow: 0 15px 15px rgba(0, 0, 0, 0.356), 0 0 10px rgba(0, 0, 0, 0.356);">
+            <div id="real-camera"></div>
+            <p class="island-info" id="island-info-wallet"></p>
+          </div>      
+        </div>
+        <h1 style="margin-left: 20px; margin-top: 380px; font-weight: 900; font-size: 50px; color: rgb(255, 255, 255); transform: rotate(90deg);">YouTube</h1>
+        <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px;">
+          <div style="margin-top: 278px; background-color: rgb(226, 226, 226);" id="leave-youtube" class="close"></div>
+        </div>
+      </div>
+
+      <!--CHAT-GPT-SCREEN-->
+      <div id="chatgpt-screen" style="display: none;">
+        <!--island-->
+        <div class="top">
+          <div class="island" id="chatgpt-island" style="box-shadow: 0 15px 15px rgba(0, 0, 0, 0.356), 0 0 10px rgba(0, 0, 0, 0.356);">
+            <div id="real-camera"></div>
+            <p class="island-info" id="island-info-chatgpt"></p>
+          </div>      
+        </div>
+        <h1 style="margin-top: 60px; font-weight: 900; font-size: 50px; color: rgb(255, 255, 255); text-align: center; margin-bottom: 0;">ChatGPT</h1>
+        <img src="images/chatgpt.webp" alt="ChatGPT" style="background-color: grey; border-radius: 1000px; width: 20%; margin: 0 40%; margin-top: 0; cursor: pointer;" id="chatgpt-island-click">
+        <p style="width: 100%; margin: 0 10px; height: 470px; font-size: 25px; color: white; flex-wrap: wrap;" id="chat-answer">Hi! How can I help you?</p>
+        <div style="display: flex; align-items: center; justify-content: space-evenly;">
+          <input type="text" placeholder="Ask me a question..." class="chatgpt-input" id="chat-input">
+          <button class="chatgpt-button" id="chat-button"></button>  
+        </div>
+        <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px;">
+          <div style="margin-top: 28px; background-color: rgb(226, 226, 226);" id="leave-chatgpt" class="close"></div>
+        </div>
+      </div>
+
+    </div>
+    <div class="slide" id="to-second-screen"></div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="chat-bot.js"></script>
+</body>
+</html>

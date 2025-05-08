@@ -1,0 +1,505 @@
+body {
+  background: rgb(0,27,133);
+  background: radial-gradient(circle, rgba(0,27,133,1) 0%, rgba(79,0,84,1) 100%);
+  font-family: Arial, Helvetica, sans-serif;
+}
+#field {
+  top: 0;
+  left: 0;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slide {
+  height: 600px;
+  width: 40px;
+  background-color: #ff000000;
+  cursor: pointer;
+  z-index: 1000;
+}
+#phone {
+  height: 800px;
+  width: 410px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: hello;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+@keyframes hello {
+  from {
+    filter: blur(20px);
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    filter: blur(0);
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+#screen {
+  background-image: url(images/wallpaper.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 390px;
+  height: 780px;
+  border-radius: 45px;
+}
+#second-screen {
+  background-image: url(images/wallpaper.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 390px;
+  height: 780px;
+  border-radius: 45px;
+}
+#top {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#island {
+  position: fixed;
+  background-color: rgb(0, 0, 0);
+  width: 100px;
+  height: 35px;
+  border-radius: 30px;
+  justify-self: center;
+  margin-top: 40px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  transition: 0.2s;
+}
+.top {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.island {
+  position: fixed;
+  background-color: rgb(0, 0, 0);
+  width: 100px;
+  height: 35px;
+  border-radius: 30px;
+  justify-self: center;
+  margin-top: 40px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  transition: 0.2s;
+}
+#island-info {
+  transition: 0.2s;
+}
+#island-info:active {
+  font-size: 25px;
+  cursor: none;
+  transform: scale(1.2);
+}
+#real-camera {
+  width: 20px;
+  height: 20px;
+  border-radius: 15px;
+  background: radial-gradient(circle, rgb(46, 46, 46) 0%, rgb(29, 29, 29) 100%);
+  margin-left: 10px;
+}
+#apps {
+  margin-top: 80px;
+  display: flex;
+  width: 100%;
+  height: 570px;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+#apps-1 {
+  margin-top: 80px;
+  display: flex;
+  width: 100%;
+  height: 570px;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.apps {
+  width: 80px;
+  height: 80px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.15s;
+  background-color: rgb(255, 255, 255);
+}
+.apps:hover {
+  transform: scale(1.1);
+}
+.apps:active {
+  transform: scale(1.05);
+}
+#calendar {
+  padding-top: 25px;
+  height: 55px;
+  font-weight: 600;
+  color: rgb(255, 97, 97);
+  text-align: center;
+  font-size: 25px;
+}
+#month {
+  color: black;
+  font-size: 25px;
+}
+#time {
+  font-size: 50px;
+  text-align: center;
+  color: rgb(161, 161, 161);
+}
+#sec {
+  font-size: 100px;
+  color: rgb(214, 214, 214);
+}
+#apps-bellow {
+  width: 370px;
+  height: 100px;
+  background-color: rgba(73, 73, 73, 0.192);
+  border-radius: 20px;
+  justify-self: center;
+  backdrop-filter: blur(10px);
+  transition: 0.2s;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#apps-bellow:hover {
+  transition: 0.5s;
+  transform: scale(1.2);
+  .apps-b {
+    width: 80px;
+    height: 80px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.15s;
+    transform: scale(0.95);
+    background-color: rgb(255, 255, 255);
+  }
+  .apps-b:hover {
+    transform: scale(1.05);
+  }
+  .apps-b:active {
+    transform: scale(0.9);
+  }
+}
+.apps-b {
+  width: 80px;
+  height: 80px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.15s;
+  transform: scale(1);
+  background-color: rgb(255, 255, 255);
+}
+/*SETTINGS*/
+#settings-screen {
+  background-color: rgb(236, 236, 236);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 390px;
+  height: 780px;
+  border-radius: 45px;
+}
+#settings-search {
+  background-color: rgba(172, 172, 172, 0.459);
+  border: none;
+  height: 35px;
+  width: 95%;
+  padding-left: 5%;
+  padding-right: 5%;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+#settings-search:focus {
+  border: none;
+  cursor: text;
+}
+.settings-island-icon {
+  transition: 0.2s;
+}
+.settings-island-icon:hover {
+    transform: scale(1.5);
+    transform: rotate(90px);
+  }
+#settings-island:active {
+  .settings-island-icon {
+    transition: 0.2s;
+    transform: scale(2);
+    margin-top: 20px;
+    padding-right: 30px;
+    background: linear-gradient(rgb(217, 221, 222), #868994);
+  }
+}
+.setting {
+  background-color: rgba(255, 255, 255, 0.774);
+  border: none;
+  width: 95%;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.setting-name {
+  margin-left: 20px;
+  font-size: 20px;
+}
+#notes-screen {
+  background-color: rgb(236, 236, 236);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 390px;
+  height: 780px;
+  border-radius: 45px;
+}
+#calendar-screen {
+  background-color: rgb(236, 236, 236);
+  background-size: cover;
+  background-position: center;
+  width: 390px;
+  height: 780px;
+  border-radius: 45px;
+}
+#clock-screen {
+  background: linear-gradient(rgb(0, 40, 97), black);
+  background-size: cover;
+  background-position: center;
+  width: 390px;
+  height: 780px;
+  border-radius: 45px;
+}
+#clock-time {
+  color: white;
+  font-size: 50px;
+  background-color: rgba(0, 0, 0, 0.219);
+  padding: 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(5px);
+}
+#app-store-screen {
+  background: linear-gradient(rgb(255, 255, 255), rgb(170, 170, 170));
+  background-size: cover;
+  background-position: center;
+  width: 390px;
+  height: 780px;
+  border-radius: 45px;
+}
+.app-store-app-container {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  height: 90px;
+  width: 90%;
+  border-radius: 20px;
+}
+.app-store-img {
+  margin-left: 10px;
+  width: 70px;
+  height: 70px;
+  border-radius: 15px;
+}
+.app-store-app-name {
+  font-size: 30px;
+  font-weight: 600;
+  width: 150px;
+  text-align: center;
+}
+.install-button {
+  width: 60px;
+  background-color: rgb(238, 238, 238);
+  border: solid 2px grey;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 50px;
+  font-weight: 900;
+  color: #4964db;
+  margin-left: 25px;
+  cursor: pointer;
+}
+#music-screen {
+  background: linear-gradient(rgb(255, 149, 232), rgb(255, 71, 133));
+  background-size: cover;
+  background-position: center;
+  width: 390px;
+  height: 780px;
+  border-radius: 45px;
+}
+#wallet-screen {
+  background: linear-gradient(rgb(26, 26, 26), rgb(0, 0, 0));
+  background-size: cover;
+  background-position: center;
+  width: 390px;
+  height: 780px;
+  border-radius: 45px;
+}
+.card {
+  border-radius: 20px;
+  background: radial-gradient(circle, rgba(104, 104, 104, 0.2) 8%, rgba(99, 99, 99, 0.2) 100%);
+  backdrop-filter: blur(5px);
+  width: 95%;
+  height: 220px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.493);
+  transform: scale(0.95);
+  transition: 1s;
+  cursor: pointer;
+}
+.card:hover {
+  transform: scale(1);
+}
+.card:active {
+  transform: rotateY(180deg);
+}
+#youtube-screen {
+  background: linear-gradient(rgb(255, 0, 0), rgb(255, 101, 101));
+  background-size: cover;
+  background-position: center;
+  width: 390px;
+  height: 780px;
+  border-radius: 45px;
+}
+#chatgpt-screen {
+  background-color: rgb(26, 26, 26);
+  width: 390px;
+  height: 780px;
+  border-radius: 45px;
+}
+
+.chatgpt-input {
+  width: 290px;
+  padding-left: 10px;
+  height: 40px;
+  border-radius: 30px;
+  font-size: 20px;
+  border: none;
+  background-color: rgb(73, 73, 73);
+  color: rgb(187, 187, 187);
+}
+.chatgpt-input:focus {
+  border: none;
+  outline: none;
+}
+.chatgpt-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  transition: 0.15s;
+  cursor: pointer;
+}
+.chatgpt-button:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+.chatgpt-button:active {
+  transform: scale(0.9);
+}
+
+/*SWITCH*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-right: 20px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+input:checked + .slider {
+  background-color: #32fc42;
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px #32fc42;
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.close {
+  width: 50%;
+  background-color: rgb(128, 128, 128);
+  height: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.15s;
+}
+.close:hover {
+  transform: scale(1.1);
+  height: 15px;
+}
+.close:active {
+  transform: scale(0.8);
+}
+@media only screen and (max-height: 800px){
+  #phone {
+    transform: scale(0.8);
+    transition: 1s;
+  }
+}
+@media only screen and (max-height: 700px){
+  #phone {
+    transform: scale(0.7);
+    transition: 1s;
+  }
+}
+@media only screen and (max-height: 600px){
+  #phone {
+    transform: scale(0.55);
+    transition: 1s;
+  }
+}
